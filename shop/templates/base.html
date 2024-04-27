@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <title>Fruitables - Vegetable Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        {% include 'components/_styles.html' %}
+
+    </head>
+
+    <body>
+
+         Spinner Start
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+         Spinner End
+
+
+        <!-- Navbar start -->
+
+         {% include 'layout/navbar.html' %}
+
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+
+         {% include 'layout/model_search.html' %}
+
+        <!-- Modal Search End -->
+
+
+
+        {% block main %}
+
+
+
+        <!-- Hero Start -->
+
+         {% include 'layout/hero.html' %}
+
+        <!-- Hero End -->
+
+
+        <!-- Featurs Section Start -->
+
+         {% include 'layout/featurs_section.html' %}
+
+        <!-- Featurs Section End -->
+
+
+        <!-- Fruits Shop Start-->
+
+         {% include 'layout/fruits_shop.html' %}
+
+        <!-- Fruits Shop End-->
+
+
+        <!-- Featurs Start -->
+
+         {% include 'layout/featurs.html' %}
+
+        <!-- Featurs End -->
+
+
+        <!-- Vesitable Shop Start-->
+
+         {% include 'layout/vesitable_shop.html' %}
+
+        <!-- Vesitable Shop End -->
+
+
+        <!-- Banner Section Start-->
+
+         {% include 'layout/banner.html' %}
+
+        <!-- Banner Section End -->
+
+
+        <!-- Bestsaler Product Start -->
+
+         {% include 'layout/bestsaler.html'%}
+
+        <!-- Bestsaler Product End -->
+
+
+        <!-- Fact Start -->
+
+         {% include 'layout/fact.html' %}
+
+        <!-- Fact Start -->
+
+
+        <!-- Tastimonial Start -->
+
+         {% include 'layout/testimal.html' %}
+
+        <!-- Tastimonial End -->
+
+
+
+        {% endblock main %}
+
+
+
+        <!-- Copyright Start -->
+
+         {% include 'layout/copyright.html'%}
+
+        <!-- Copyright End -->
+
+         <!-- Footer -->
+
+         {% include 'layout/footer.html' %}
+
+         <!-- Footer end -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    {% include 'components/_scripts.html' %}
+
+    </body>
+
+</html>
