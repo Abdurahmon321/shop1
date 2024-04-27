@@ -22,3 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("fath.urls"))
 ]
+
+handler404 = "fath.views.handler404"
